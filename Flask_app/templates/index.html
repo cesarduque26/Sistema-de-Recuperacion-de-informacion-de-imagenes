@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/styles_index.css')}}">
+    <title>Camara</title>
+</head>
+<body>
+    
+    <div class="form-file">
+        <div class="form-file__action">
+            <label for="image" class="title">Imagen Seleccionada</label>
+
+            <input type="file" name="image" id="image" />
+        </div>
+        <div class="form-file__result" id="result-image">
+            <img id="img-result" alt="" />
+        </div>
+    </div>
+
+    <button id="openModal">Iniciar Cámara</button>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <video id="camera" autoplay></video>
+            <canvas id="photo" style="display: none;"></canvas>
+            <img id="output" alt="" />
+            <button id="capture" disabled>Capturar foto</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+</body>
+</html>

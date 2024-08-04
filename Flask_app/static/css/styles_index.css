@@ -95,13 +95,16 @@ body {
 }
 
 .modal-content {
-    background-color: #fefefe;
-    margin: 5% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 300px;
-    position: relative;
+	background-color: #fefefe;
+	margin: 5% auto;
+	padding: 10px;
+	padding-top: 0px;
+	padding-bottom: 10px;
+	border: 1px solid #888;
+	width: 80%;
+	max-width: 300px;
+	position: relative;
+	border-radius: 10px; 
 }
 
 .close {
@@ -121,6 +124,7 @@ body {
 #camera {
     width: 100%;
     height: auto;
+	border-radius: 10px;
 }
 
 .icon-button {
@@ -136,4 +140,24 @@ body {
 
 .icon-button i {
     pointer-events: none; /* Asegurarse de que el ícono no interrumpa el clic */
+}
+
+
+#capture {
+    padding: 6px;
+    border-radius: 6px 6px 6px 6px; /* Puedes ajustar el valor para hacer los bordes más o menos redondos */
+    font-size: 12px;/* padding: 10px 20px; /* Ajusta el relleno para darle un mejor aspecto al botón */
+    border: 0.5px solid #ccc;/* background-color: #4CAF50; /* Cambia el color de fondo según tu preferencia */
+           /* color: white; /* Cambia el color del texto según tu preferencia */
+    background-color:#0081a5;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    margin: 0px auto;
+    margin-top: -10px;
+ 
+ }
+
+#capture:hover{
+    background-color: gray;
 }

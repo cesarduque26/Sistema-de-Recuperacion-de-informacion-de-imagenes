@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{url_for('static',filename = 'css/styles_index.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Camara</title>
 </head>
 <body>
@@ -12,7 +13,9 @@
     <div class="form-file">
         <div class="form-file__action">
             <label for="image" class="title">Imagen Seleccionada</label>
-
+            <button id="openModal" class="icon-button">
+                <i class="fas fa-camera"></i>
+            </button>
             <input type="file" name="image" id="image" />
         </div>
         <div class="form-file__result" id="result-image">
@@ -20,7 +23,7 @@
         </div>
     </div>
 
-    <button id="openModal">Iniciar Cámara</button>
+   
     <div id="modal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>

@@ -10,9 +10,18 @@
 </head>
 <body>
     
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Resultados</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <div class="form-file">
         <div class="form-file__action">
-            <label for="image" class="title">Imagen Seleccionada</label>
+            <label for="image" class="title">Buscador de Imagenes</label>
             <button id="openModal" class="icon-button">
                 <i class="fas fa-camera"></i>
             </button>
@@ -34,6 +43,15 @@
         </div>
     </div>
 
+    <div id="botonResultados">
+       <button id="viewBoton">View Results</button>
+    </div>
+
     <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+
+
+    <footer>
+        <p>&copy; 2024 Buscador de Imagenes. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>

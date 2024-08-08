@@ -11,14 +11,14 @@ header {
     background-color:  #f1f1f1; /* Color de fondo oscuro similar a la imagen */
     color: black;
     padding: 10px 20px;
+    
     display: flex;
     align-items: center;
-    justify-content: space-between;
+  
 }
 
 header nav {
     display: flex;
-    align-items: center;
     width: 100%;
 }
 
@@ -39,11 +39,15 @@ header nav ul li {
 header nav ul li a {
     color: black;
     text-decoration: none;
-    font-size: 18px;
+
 }
 
 header nav ul li a:hover {
-    text-decoration: underline;
+    /*text-decoration: underline;*/
+    background-color: #333342;
+    border-radius: 3px;
+    padding: 11px;
+    color: white;
 }
 
 
@@ -60,6 +64,7 @@ header nav ul li a:hover {
 }
 .form-file__action label {
 	margin-top: 10%;
+    font-size: 30px;
 	display: block;
 	color: white;
 }
@@ -210,4 +215,23 @@ footer {
 	position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+#botonResultados{
+    font-size: 66px;
+    text-align: center;
+}
+
+#viewBoton{
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: white;
+    border-color: #333342;
+}
+
+#viewBoton:hover{
+    background-color: #333342;
+    color: white;
 }

@@ -51,12 +51,51 @@ header nav ul li a:hover {
 }
 
 
+.tituloResultados{
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    margin-top: 50px;
+}
 
 
+.resultados{
+   
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    
+}
 
+#botonResultados{
+    text-align: center;
+}
 
+#viewBoton{
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: white;
+    border-color: #333342;
+}
 
+#viewBoton:hover{
+    background-color: #333342;
+    color: white;
+}
 
+.tarjetas{
+    padding: 15px; 
+    background-color: #2a2832;
+    margin: 5px;
+    color: white;
+    border-radius: 10px;
+}
+
+.imagenesResultados{
+  border-radius: 6px;
+}
 
 footer {
     background-color: #f1f1f1;

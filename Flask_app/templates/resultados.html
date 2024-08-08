@@ -16,7 +16,31 @@
             </ul>
         </nav>
     </header>
-   
+
+   <div class="tituloResultados">
+     <label>Resultados Recuperados</label>
+     <div id="botonResultados">
+        <button id="viewBoton" >Buscar nueva imagen</button>
+     </div>
+   </div>
+
+    <div class="resultados">
+        {% for image in images %}
+        <div class="tarjetas">
+            <img class="imagenesResultados" src="{{ url_for('static', filename='img/' + image) }}" alt="{{ image }}" width="200px" height="200px">
+            <p>{{ image }}</p>
+            <p>{{ image }}</p>
+        </div>
+        <br>
+        {% endfor %}
+    </div>
+
+    <div class="resultados">
+            <div class="resultado">
+                <h3></h3>
+                <p></p> 
+            </div>
+    </div>
    
    
    

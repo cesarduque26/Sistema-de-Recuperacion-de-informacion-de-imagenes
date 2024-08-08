@@ -2,6 +2,7 @@ from flask import Flask, render_template, request
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 import funciones_flask as fun
 import pickle
+import os
 
 app = Flask(__name__)
 
@@ -11,12 +12,12 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('resultados.html')
+    image_folder = os.path.join(app.static_folder, 'img')
+    # Listar todos los archivos en la carpeta
+    image_files = [f for f in os.listdir(image_folder) if os.path.isfile(os.path.join(image_folder, f))]
+    return render_template('resultados.html', images=image_files)
 
 
-#@app.route('/buscar', methods=['POST'])
-#def buscar():
-#    render_template('resultados.html')
 
 
 if __name__ == '__main__':

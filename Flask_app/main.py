@@ -15,8 +15,8 @@ def index():
     image_folder = os.path.join(app.static_folder, 'img')
     # Listar todos los archivos en la carpeta
     image_files = [f for f in os.listdir(image_folder) if os.path.isfile(os.path.join(image_folder, f))]
-    return render_template('resultados.html', images=image_files)
-
+   # return render_template('resultados.html', images=image_files)
+    return render_template('index.html')
 
 
 
